@@ -1,0 +1,29 @@
+.sobre-nos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.imagem {
+  width: 100vw;
+  height: 100vh; /* Começa ocupando toda a tela */
+  overflow: hidden;
+  transition: height 0.8s ease-in-out;
+}
+
+.imagem.fechado {
+  height: 50vh; /* Reduz para metade da tela */
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

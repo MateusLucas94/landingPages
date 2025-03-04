@@ -1,0 +1,39 @@
+.carrocel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Swiper ocupa toda a tela */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Configuração dos slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff; /* Fundo preto para evitar bordas brancas */
+}
+
+/* Ajuste da imagem para caber na tela sem cortar */
+.carrocel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantém a proporção sem cortar a imagem */
+}
+
+/* Customiza os botões de navegação do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f1bb02;
+}
