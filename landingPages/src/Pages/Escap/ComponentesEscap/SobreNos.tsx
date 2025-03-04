@@ -1,19 +1,26 @@
 import { useEffect, useState } from "react";
 import "../css/SobreNos.css";
 
-const SobreNos = () => {
+const SobreNos: React.FC = () => {
   const [fechado, setFechado] = useState(false);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
+    let ticking = false;
 
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setFechado(true); // Fecha ao rolar para baixo
-      } else {
-        setFechado(false); // Abre ao rolar para cima
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > lastScrollY + 10) {
+            setFechado(true);
+          } else if (window.scrollY < lastScrollY - 10) {
+            setFechado(false);
+          }
+          lastScrollY = window.scrollY;
+          ticking = false;
+        });
+        ticking = true;
       }
-      lastScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +44,7 @@ const SobreNos = () => {
       </div>
 
       <div className={`imagem ${fechado ? "fechado" : ""}`}>
-        <img src="./src/assets/img/carroTraseira.jpg" alt="Sobre nós" />
+        <img src="/src/assets/img/carroTraseira.jpg" alt="Sobre nós" />
       </div>
     </div>
   );

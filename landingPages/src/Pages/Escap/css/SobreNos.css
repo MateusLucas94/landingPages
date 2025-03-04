@@ -13,13 +13,14 @@
 
 .imagem {
   width: 100vw;
-  height: 100vh; /* Começa ocupando toda a tela */
+  height: 100vh;
   overflow: hidden;
-  transition: height 0.8s ease-in-out;
+  transition: height 0.8s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .imagem.fechado {
-  height: 50vh; /* Reduz para metade da tela */
+  height: 50vh;
+  transform: translateY(10px);
 }
 
 .imagem img {
