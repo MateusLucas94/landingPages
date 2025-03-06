@@ -1,0 +1,52 @@
+/* Container principal */
+.sobre-nos-pneus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 10%;
+  background-color: #f8f8f8;
+}
+
+/* Conteúdo textual */
+.sobre-nos-pneus__content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.sobre-nos-pneus__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.sobre-nos-pneus__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Imagem */
+.sobre-nos-pneus__image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.sobre-nos-pneus__image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .sobre-nos-pneus {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-nos-pneus__content,
+  .sobre-nos-pneus__image {
+    max-width: 100%;
+  }
+}

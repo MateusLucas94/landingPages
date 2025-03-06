@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Agro from "./Pages/Agro/Agro";
-import Pneus from "./Pages/Pneu/Pneu";
+import Pneus from "./Pages/Pneus/Pneu";
 import Escap from "./Pages/Escap/Escap";
 // import "./index.css";
 

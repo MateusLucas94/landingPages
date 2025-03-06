@@ -1,0 +1,137 @@
+.contato-pneu-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 20px;
+  background: url("/src/assets/imgPneus/fachada.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.contato-pneu-info,
+.contato-pneu-form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 350px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contato-pneu-form h2 {
+  color: #ffffff; /* Escolha a cor desejada */
+}
+
+.contato-pneu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-pneu-info p {
+  color: #ffffff; /* Escolha a cor desejada */
+}
+
+.contato-pneu-info-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contato-pneu-info-icon {
+  font-size: 20px;
+  color: #d00000; /* Ícones agora estão vermelhos */
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.contato-pneu-input-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contato-pneu-input-icon {
+  color: #d00000; /* Ícones dentro dos inputs também vermelhos */
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.contato-pneu-input-box input,
+.contato-pneu-input-box textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.contato-pneu-button {
+  background: #d00000; /* Botão agora está vermelho */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: auto;
+}
+
+.contato-pneu-button:hover {
+  background: #a50000; /* Efeito hover para um tom mais escuro */
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .contato-pneu-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contato-pneu-info,
+  .contato-pneu-form {
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .contato-pneu-info-box {
+    justify-content: center;
+  }
+}

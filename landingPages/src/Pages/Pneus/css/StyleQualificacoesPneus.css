@@ -1,0 +1,70 @@
+.qualificacoes-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Texto branco para maior contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para destacar o texto */
+}
+
+.qualificacoes-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.card1 {
+  background-color: #d41414;
+}
+.card1 p {
+  color: #ffffff; /* Escolha a cor desejada */
+}
+
+.card2 {
+  background-color: #d41414;
+}
+
+.card2 p {
+  color: #ffffff; /* Escolha a cor desejada */
+}
+
+.card3 {
+  background-color: #d41414;
+}
+
+.card3 p {
+  color: #ffffff; /* Escolha a cor desejada */
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff; /* Garante que o título também está legível */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f8f8f8; /* Cinza claro para melhor contraste */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
