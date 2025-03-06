@@ -1,0 +1,58 @@
+/* Container principal do carrossel */
+.carrocel-container {
+  width: 100vw; /* Ocupa toda a largura da tela */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ajusta a altura do Swiper para ocupar toda a tela */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Configuração das imagens do Swiper */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção e cobre toda a área */
+}
+
+/* Botões de navegação do Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important; /* Ícones brancos */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  padding: 20px;
+  border-radius: 50%; /* Deixa os botões arredondados */
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efeito de hover nos botões */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Fica mais claro ao passar o mouse */
+  color: black !important;
+  transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Ajuste na paginação (bullets) */
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: red !important; /* Destaque para o bullet ativo */
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+}

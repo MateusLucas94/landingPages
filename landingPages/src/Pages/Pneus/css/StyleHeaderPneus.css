@@ -1,0 +1,107 @@
+.headerPneus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.3); /* Transparente no início */
+  color: white;
+  transition: all 0.3s ease-in-out;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.headerPneus.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Mais escuro ao rolar */
+  padding: 20px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logoPneus {
+  height: 40px;
+  transition: height 0.3s ease-in-out;
+}
+
+.headerPneus.scrolled .logoPneus {
+  height: 30px;
+}
+
+.navBarPneus {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 50px;
+}
+
+.navBarPneus select {
+  background-color: black;
+}
+
+.navBarPneus a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navBarPneus a:hover {
+  color: #d32f2f;
+}
+
+.navSelectPneus {
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.navSelectPneus option {
+  color: white; /* Cor inicial do texto dentro das opções */
+  background-color: black; /* Cor de fundo das opções */
+}
+
+.navSelectPneus option:hover {
+  color: #d32f2f; /* Cor do texto ao passar o mouse */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Fundo da opção ao passar o mouse */
+}
+
+.navSelectPneus:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navSelectPneus:focus {
+  outline: none; /* Remove o contorno do foco */
+}
+
+.react-select__control {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.react-select__single-value {
+  color: white;
+}
+
+.react-select__menu {
+  background-color: black;
+}
+
+.react-select__option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #d32f2f; /* Cor do texto ao passar o mouse */
+}

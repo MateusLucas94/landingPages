@@ -1,0 +1,35 @@
+.localizacoes-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mapas-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mapa {
+  width: 300px;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
